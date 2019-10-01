@@ -5,13 +5,17 @@
   "dependencies": {
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
-    "react-scripts": "3.1.2"
+    "react-scripts": "3.1.2",
+    "reason-react": "^0.7.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "yarn re:build && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "re:build": "bsb -make-world",
+    "re:start": "bsb -make-world -w",
+    "clean": "bsb -clean-world"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +31,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "bs-platform": "^5.0.6"
   }
 }
