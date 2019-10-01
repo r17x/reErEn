@@ -17,6 +17,7 @@ type reactNativeNewAppScreenColors = {
   "dark": string,
 };
 
+// LoadModules 
 [@bs.module "react-native/Libraries/NewAppScreen"]
 external colors: reactNativeNewAppScreenColors = "Colors";
 
